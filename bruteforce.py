@@ -49,6 +49,7 @@ for i in range(1, len(b)):
             portefeuilles.append((benefice(l), l))
 print(f" {len(portefeuilles)} portefeuilles sont valides")
 p = max(portefeuilles, key= lambda x: x[0])
+display(p[1])
 print(p)
 
 
