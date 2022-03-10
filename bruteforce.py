@@ -44,4 +44,4 @@ for act in [ACTIONS, ACTIONS_1, ACTIONS_2]:
     # calcul du temps écoulé et affichage de ce temps
     end = time.time()
     delta_time = end - start
-    print(f"\nt ### Le programme c'est déroulé en {delta_time} secondes pour une jeu de {len(act)} actions ###\n")
+    print(f"\n\t ### Le programme c'est déroulé en {delta_time} secondes pour une jeu de {len(act)} actions ###\n")
