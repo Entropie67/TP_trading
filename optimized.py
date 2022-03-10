@@ -14,6 +14,7 @@ def tri_rentabilite(actions):
 
 
 def glouton(actions):
+    print("..... glouton ....")
     actions_triees = tri_rentabilite(actions)
     total = 0
     benefice = 0
@@ -24,8 +25,8 @@ def glouton(actions):
             portefeuille.append(action)
             benefice += action[1] * action[2]
         if total == 500:
-            return portefeuille
-    return portefeuille
+            return benefice
+    return benefice
 
 
 

@@ -26,4 +26,4 @@ def depense(portefeuille: list[str, float, float]) -> float:
 
 def display(p: list[str, float, float]) -> None:
     """Ensemble des informations d'un portefeuille"""
-    print(f"{20*'#'}\n Nombre d'actions : {len(p)} Coût : {depense(p)} Bénéfice : {benefice(p)} \n{20*'#'}")
+    print(f"\n Nombre d'actions : {len(p)} Coût total : {depense(p)} \n")

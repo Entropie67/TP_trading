@@ -5,8 +5,7 @@ from utils import benefice, depense, display
 
 
 def bruteforce(liste_actions):
-
-    display(liste_actions)
+    print("..... brute force ....")
     benefice_max = [-1, []]
     for i in range(1, len(liste_actions)):
         # On va prendre toutes les combinaisons de i éléments de la liste
