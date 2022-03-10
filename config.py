@@ -2,7 +2,7 @@ import csv
 
 
 BUDGET = 500
-FICHIER = 'data/liste_actions.csv'
+FICHIERS = ['data/liste_actions.csv', 'data/dataset1_Python.csv', 'data/dataset2_Python.csv']
 
 
 def lecture(fichier: str) -> list:
@@ -15,4 +15,6 @@ def lecture(fichier: str) -> list:
     return actions
 
 
-ACTIONS = lecture(FICHIER)
+ACTIONS = lecture(FICHIERS[0])
+ACTIONS_1 = lecture(FICHIERS[1])
+ACTIONS_2 = lecture(FICHIERS[2])

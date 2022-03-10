@@ -1,6 +1,6 @@
 import time
 from itertools import combinations
-from config import BUDGET, ACTIONS
+from config import BUDGET, ACTIONS, ACTIONS_1, ACTIONS_2
 
 
 def benefice(portefeuille: list) -> float:
@@ -37,10 +37,11 @@ def meilleur_choix(liste_actions):
 
 
 # Initialisation du chronomètre
-
-start = time.time()
-print(meilleur_choix(ACTIONS))
-# calcul du temps écoulé et affichage de ce temps
-end = time.time()
-delta_time = end - start
-print(f"\n\n\t ### Le programme c'est déroulé en {delta_time} secondes ###\n")
+for act in [ACTIONS, ACTIONS_1, ACTIONS_2]:
+    start = time.time()
+    reponse = meilleur_choix(act)
+    print(reponse)
+    # calcul du temps écoulé et affichage de ce temps
+    end = time.time()
+    delta_time = end - start
+    print(f"\nt ### Le programme c'est déroulé en {delta_time} secondes pour une jeu de {len(act)} actions ###\n")
