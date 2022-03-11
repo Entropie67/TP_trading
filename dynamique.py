@@ -26,5 +26,3 @@ def dynamique1(act, poids_max=BUDGET):
             v[i][p] = max(v[i - 1][p], valeurs[i] + v[i - 1][p - poids[i]])
     return v[n - 1][poids_max]
 
-
-print(dynamique1(ACTIONS))

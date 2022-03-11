@@ -27,7 +27,7 @@ for act in [ACTIONS, ACTIONS_1, ACTIONS_2]:
     reponse = dynamique1(act)
     end = time.time()
     delta_time = end - start
-    print(f"\n\t ### BRUTE FORCE ###\n temps: {delta_time} Bénéfice: {reponse[0]}€ \n")
+    print(f"\n\t ### DYNAMIQUE ###\n temps: {delta_time} Bénéfice: {reponse}€ \n")
 
 for act in [ACTIONS, ACTIONS_1, ACTIONS_2]:
     start = time.time()
